@@ -1,52 +1,51 @@
-# Retail Sales Analysis SQL Project
+# 📺 YouTube Channel Analytics Dashboard
 
-## Overview
-Welcome to my Retail Sales Analysis project! This repository contains a comprehensive SQL project designed to set up a retail sales database, perform data cleaning, and conduct exploratory data analysis (EDA). The ultimate goal is to derive actionable insights from the sales data.
+A data-driven analysis of the **most subscribed YouTube channels**, uncovering insights on categories, countries, and subscriber growth trends using Python and modern visualization techniques.
 
-## Objectives
-1. **Database Setup**: 
-   - Creation of a robust retail sales database named `p1_retail_db`.
-   - Development of a `retail_sales` table to store essential sales data, including transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
+---
 
-2. **Data Cleaning**: 
-   - Identification and removal of records with missing or null values to ensure data integrity.
+## 🚀 Project Summary
 
-3. **Exploratory Data Analysis (EDA)**: 
-   - Basic analysis to understand the dataset's characteristics, including record counts and unique entries.
+This project explores a dataset of top YouTube channels by subscriber count. Using Python's data analysis libraries, we perform cleaning, exploration, and visualization to understand:
 
-4. **Business Analysis**: 
-   - Utilization of SQL queries to answer specific business questions and extract valuable insights from the sales data.
+- Which categories dominate YouTube
+- Geographic distribution of top channels
+- Correlation between views, videos, and subscribers
+- Outliers and trend patterns in channel performance
 
-## Project Structure
-- **Database Setup**: The project initializes the database and creates the sales table with the following SQL commands:
-  ```sql
-  CREATE DATABASE p1_retail_db;
-  CREATE TABLE retail_sales(
-      transactions_id INT PRIMARY KEY,
-      sale_date DATE,
-      sale_time TIME,
-      customer_id INT,
-      gender VARCHAR(10),
-      age INT,
-      category VARCHAR(35),
-      quantity INT,
-      price_per_unit FLOAT,
-      cogs FLOAT,
-      total_sale FLOAT
-  );
-  ```
+---
 
-- **Data Exploration & Cleaning**: This section includes SQL queries to:
-  - Count total records: `SELECT COUNT(*) FROM retail_sales;`
-  - Count unique customers: `SELECT COUNT(DISTINCT customer_id) FROM retail_sales;`
-  - Identify unique product categories: `SELECT DISTINCT category FROM retail_sales;`
+## 🔧 Tools & Technologies
 
-## Insights
-By analyzing this dataset, I aim to uncover patterns and trends that can drive business decisions and enhance sales strategies. The analysis will serve as a foundation for further exploration into customer behavior, product performance, and operational efficiencies.
+- 🐍 Python (pandas, NumPy)
+- 📊 Visualization: matplotlib, seaborn
+- 📁 Dataset: `topSubscribed.csv` from Kaggle or YouTube Stats
 
-## Tools and Technologies
-- SQL (Structured Query Language)
-- Database Management Systems (e.g., MySQL, PostgreSQL)
-- Data Visualization Tools (for future extensions)
+---
 
-Feel free to explore the code and contribute to the project. Your feedback and suggestions are highly appreciated!
+## 📈 Key Insights
+
+- 📌 Entertainment dominates subscriber count, but **Music** and **Gaming** also lead in engagement.
+- 🌎 Most top channels originate from the **United States**, **India**, and **Brazil**.
+- 🔍 Identified outliers like **T-Series** and **MrBeast** for subscriber/view ratios.
+- 🎯 Channels with fewer videos sometimes outperform heavily active ones due to content quality or viral impact.
+
+---
+
+## 🧠 Skills Demonstrated
+
+- Exploratory Data Analysis (EDA)
+- Data Cleaning & Preparation
+- Grouping, Sorting, and Aggregation
+- Correlation Heatmaps & Trend Analysis
+- Insight Communication through Visuals
+
+---
+
+## 📂 Project Structure
+
+```bash
+📦 YouTubeProject/
+├── YoutubeProject.ipynb          # Jupyter notebook with full analysis
+├── topSubscribed.csv             # Dataset (optional)
+├── README.md                     # Project description and summary
